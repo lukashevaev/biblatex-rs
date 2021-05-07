@@ -1,0 +1,3 @@
+# Project exclude paths
+/biblatex-rs-ear/target/
+/biblatex-rs-ejb/target/
