@@ -6,6 +6,7 @@ import org.jsoup.helper.StringUtil;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class BibLaTexBuilder {
     private String recordType;
@@ -57,8 +58,7 @@ public class BibLaTexBuilder {
         if (!StringUtil.isBlank(author)) instance.setAuthor(author.substring(0, author.length() - 2));
 
         // Заменяем "rus" на "russian" (по правилам данного формата)
-        if (instance.getLanguage().equals("rus"))
-            instance.setLanguage("russian");
+        if (instance.getLanguage().equals("rus")) instance.setLanguage("russian");
         // Удаляем поле том, если оно не удовлетворяет паттерну
         if (!PatternFactory.volumePattern.matcher(instance.getVolume().toLowerCase()).find()) instance.deleteVolume();
         // Если не статья, то удаляем номер
@@ -72,11 +72,12 @@ public class BibLaTexBuilder {
         String pages = instance.getPages();
         if (!"book".equals(recordType) & PatternFactory.pagePattern.matcher(pages).find()) instance.deletePages();
 
-        if (!"".equals(instance.getAddress())) instance.setAddress("-" + instance.getAddress() + ":");
-        if (!"".equals(instance.getEdition())) instance.setEdition("-" + instance.getEdition());
-        if (!"".equals(instance.getPages())) instance.setPages("-" + getDigits(instance.getPages()) + " с.");
-        if (!"".equals(instance.getPublisher())) instance.setPublisher(instance.getPublisher() + ", ");
-        if (!"".equals(instance.getTitleChapter())) instance.setTitleChapter("// " + instance.getTitleChapter());
+        instance.setAddress(" - " + instance.getAddress() + ":");
+        instance.setEdition(" - " + instance.getEdition());
+        instance.setPages("- " + getDigits(instance.getPages()) + " с.");
+        instance.setPublisher(instance.getPublisher() + ", ");
+        instance.setTitleChapter("// " + instance.getTitleChapter());
+        instance.setEditor("/ " + instance.getEditor());
 
 
         instance.getFields().entrySet().forEach(entry -> {
@@ -84,15 +85,18 @@ public class BibLaTexBuilder {
                 entry.setValue(entry.getValue() + ". ");
             }
         });
-    }
 
-    public String buildBiblatex() {
+        //Удаляем пустые поля
         instance.setFields(
                 instance.getFields()
                         .entrySet()
                         .stream()
-                        .filter(entry -> entry.getValue() != null && !entry.getValue().equals(""))
+                        .filter(entry -> entry.getValue() != null && !entry.getValue().equals("") && PatternFactory.notEmptyFieldPattern.matcher(entry.getValue()).find())
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue , (a, b) -> a, LinkedHashMap::new)));
+    }
+
+    public String buildBiblatex() {
+
         StringBuilder builder = new StringBuilder();
         if (!"".equals(instance.getAuthor()) && !"proceedings".equals(recordType)) {
             builder.append(instance.getAuthor())
@@ -101,71 +105,83 @@ public class BibLaTexBuilder {
             builder.append(instance.getTitle());
         }
         if ("article".equals(recordType)) {
-            if (!"".equals(instance.getPages())) instance.setPages("-" + getDigits("C" + instance.getPages()));
-            //getEditor /before  //after
-            builder.append(instance.getJournal());
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            if (!instance.getVolume().equals("")) builder.append(" - ").append(instance.getVolume());
-            builder.append(instance.getPages());
+            instance.setPages(" - " + getDigits("C" + instance.getPages()));
+            builder.append(" // ").append(instance.getJournal());
+            builder.append(" - ").append(instance.getVolume());
+            builder.append(instance.getEditor())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
         } else if ("book".equals(recordType)) {
-            builder.append(instance.getVolume());
-            builder.append(instance.getEdition());
-            //getEditor /before
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            builder.append(instance.getVolume())
+                    .append(instance.getEdition())
+                    .append(instance.getEditor())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
         } else if ("mvbook".equals(recordType)) {
-            //getEditor /before
-            builder.append(instance.getEdition());
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            builder.append(instance.getEditor())
+                    .append(instance.getEdition())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
         } else if ("inbook".equals(recordType)) {
-            builder.append(instance.getVolume());
-            builder.append(instance.getEdition());
-            //getEditor /before
             if (!instance.getPublisher().equals("")) instance.setPublisher("В: " + instance.getPublisher() + "(изд.)");
-            if (!"".equals(instance.getPages())) instance.setPages("-" + getDigits("C" + instance.getPages()));
-            builder.append(instance.getTitleChapter());
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            if (!"".equals(instance.getPages())) instance.setPages(" - " + getDigits("C" + instance.getPages()));
+            builder.append(instance.getVolume())
+                    .append(instance.getEdition())
+                    .append(instance.getEditor())
+                    .append(instance.getTitleChapter())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
         } else if ("thesis".equals(recordType)) {
-            if (!instance.getOldType().equals("")) builder.append(": ").append(instance.getOldType());
-            // : speciality code
-            // editor /before
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            builder.append(instance.getOldType())
+                    // : speciality code
+                    .append(instance.getEditor())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
         } else if ("proceedings".equals(recordType)) {
-            //getEditor /before
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            builder.append(instance.getEditor())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
             // -(series; number).
         } else if ("inproceedings".equals(recordType)) {
             if (!"".equals(instance.getPages())) instance.setPages("-" + getDigits("C" + instance.getPages()));
-            //getEditor; /before
-            builder.append(instance.getTitleChapter());
-            builder.append(instance.getAddress());
-            builder.append(instance.getPublisher());
-            builder.append(instance.getYear());
-            builder.append(instance.getPages());
+            builder.append(instance.getEditor())
+                    .append(instance.getTitleChapter())
+                    .append(instance.getAddress())
+                    .append(instance.getPublisher())
+                    .append(instance.getYear())
+                    .append(instance.getPages());
             //  -(series; number).
         } else {
             builder = new StringBuilder();
             instance.getFields().values().forEach(builder::append);
         }
         builder.trimToSize();
-        builder.deleteCharAt(builder.length() - 1);
-        return builder.toString().replace("..", ".");
+        String[] words = builder.toString().split(" ");
+        String field = null;
+        for (int i = words.length - 1; i >= 0; i--) {
+            field = words[i];
+            if (PatternFactory.notEmptyFieldPattern.matcher(field).find() && field.length() > 1) {
+                break;
+            }
+        }
+        String result = builder.toString();
+        if (field != null) return builder
+                .substring(0, result.lastIndexOf(field) + field.length())
+                .replaceAll("\\.\\s*[a-zA-Zа-яА-Я]?\\s*\\.", ".")
+                .replaceAll(",\\s*[,.]", ",")
+                .replaceAll(":\\s*[,.]", ":");
+        return result;
     }
-
 }

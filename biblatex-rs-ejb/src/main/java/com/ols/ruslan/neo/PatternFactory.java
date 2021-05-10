@@ -29,7 +29,7 @@ public class PatternFactory {
         patternsForType.put(RecordType.article,
                 Pattern.compile("журнал|journal|статья|article"));
         patternsForType.put(RecordType.thesis,
-                Pattern.compile("дис.*канд|выпускная квалификационная работа|дис.*маг|" +
+                Pattern.compile("дис.*канд|выпускная квалификационная работа|дис.*маг|дис.*док|диссертац|" +
                         "((master(s)|bachelor)?)?\\s*thesis\\s*((of)?\\smaster(s)|bachelor)?"));
         patternsForType.put(RecordType.techreport,
                 Pattern.compile("technical report|отчет|доклад"));
@@ -79,5 +79,7 @@ public class PatternFactory {
     }
 
     public static final Pattern specialSymbolsPattern = Pattern.compile("[:;]");
+
+    public static final Pattern notEmptyFieldPattern = Pattern.compile("[a-zA-Zа-яА-Я0-9]{2,}");
 
 }

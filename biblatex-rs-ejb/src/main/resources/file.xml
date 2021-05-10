@@ -1,89 +1,225 @@
-<record syntax="rusmarc">
+<record syntax="1.2.840.10003.5.28.1">
     <leader>
-        <length>00780</length>
+        <length>02353</length>
         <status>n</status>
         <type>a</type>
-        <leader07>m</leader07>
-        <leader08> </leader08>
+        <leader07>a</leader07>
+        <leader08>2</leader08>
         <leader09>a</leader09>
         <indicatorCount>2</indicatorCount>
         <identifierLength>2</identifierLength>
-        <dataBaseAddress>00241</dataBaseAddress>
-        <leader17>3</leader17>
+        <dataBaseAddress>00265</dataBaseAddress>
+        <leader17> </leader17>
         <leader18>i</leader18>
         <leader19> </leader19>
         <entryMap>450 </entryMap>
     </leader>
-    <field id="001">1</field>
-    <field id="005">20190822123749.9</field>
+    <field id="001">11</field>
+    <field id="005">20210504115303.4</field>
+    <field id="035">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">249423</subfield>
+    </field>
     <field id="100">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">19991022d1969 k y1rusb01020304ca</subfield>
+        <subfield id="a">20210504a2004 k y0rusy50 ca</subfield>
     </field>
-    <field id="105">
+    <field id="101">
+        <indicator id="1">0</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">rus</subfield>
+    </field>
+    <field id="102">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">a j </subfield>
+        <subfield id="a">RU</subfield>
     </field>
     <field id="200">
         <indicator id="1">1</indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">Thermodynamics </subfield>
-        <subfield id="e">An introductory text for engineering students</subfield>
+        <subfield id="a">Информационная составляющая современных войн</subfield>
+        <subfield id="f">О. В. Иванов</subfield>
     </field>
-    <field id="205">
+    <field id="225">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Социология современных войн</subfield>
+    </field>
+    <field id="330">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">2. ed</subfield>
+        <subfield id="a">Анализ информационных технологий в современной военной технике и информационного превосходства, борьба в информационной сфере, что такое информационное оружие, а также новые направления научных исследований в области информационной безопасности России.</subfield>
     </field>
-    <field id="210">
+    <field id="461">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="1">
+            <field id="001">RU\SPSTU\ser\101034</field>
+        </subfield>
+        <subfield id="1">
+            <field id="011">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">0201-7385</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="101">
+                <indicator id="1">0</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">rus</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="102">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">RU</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="200">
+                <indicator id="1">1</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Вестник Московского университета</subfield>
+                <subfield id="e">научный журнал</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="210">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">М.</subfield>
+                <subfield id="d">1993-</subfield>
+                <subfield id="c">Изд-во Московского ун-та</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="710">
+                <indicator id="1">0</indicator>
+                <indicator id="2">0</indicator>
+                <subfield id="a">Московский государственный университет им. М. В. Ломоносова</subfield>
+            </field>
+        </subfield>
+    </field>
+    <field id="462">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="1">
+            <field id="001">RU\SPSTU\ser\101057</field>
+        </subfield>
+        <subfield id="1">
+            <field id="200">
+                <indicator id="1">1</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Социология и политология</subfield>
+                <subfield id="h">Сер.18</subfield>
+                <subfield id="f">Социологический факультет МГУ</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="686">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="2">rubbk</subfield>
+                <subfield id="a">66я5</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="686">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="2">rubbk</subfield>
+                <subfield id="a">60.5я5</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="712">
+                <indicator id="1">0</indicator>
+                <indicator id="2">2</indicator>
+                <subfield id="a">Социологический факультет МГУ</subfield>
+            </field>
+        </subfield>
+    </field>
+    <field id="463">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">Reading et al.</subfield>
-        <subfield id="c">Addison-Wesley</subfield>
-        <subfield id="d">1969</subfield>
-    </field>
-    <field id="215">
-        <indicator id="1"> </indicator>
-        <indicator id="2"> </indicator>
-        <subfield id="a">622p.</subfield>
+        <subfield id="1">
+            <field id="001">RU\SPSTU\ser\183254</field>
+        </subfield>
+        <subfield id="1">
+            <field id="101">
+                <indicator id="1">0</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">rus</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="102">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">RU</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="200">
+                <indicator id="1">0</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">№ 4</subfield>
+                <subfield id="v">С.64-70</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="210">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="d">2004</subfield>
+            </field>
+        </subfield>
     </field>
     <field id="606">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="2">spstush</subfield>
-        <subfield id="3">RU\SPSTU\sub\1215</subfield>
-        <subfield id="a">Термодинамика</subfield>
+        <subfield id="a">Социология</subfield>
+        <subfield id="x">Социология сферы общественной жизни</subfield>
+        <subfield id="y">Россия</subfield>
     </field>
-    <field id="620">
-        <indicator id="1"> </indicator>
+    <field id="610">
+        <indicator id="1">1</indicator>
         <indicator id="2"> </indicator>
-        <subfield id="d">Readingetal.</subfield>
+        <subfield id="a">современные войны</subfield>
+        <subfield id="a">информационная безопасность</subfield>
+        <subfield id="a">информационное оружие</subfield>
+        <subfield id="a">информационная безопасность</subfield>
+        <subfield id="a">социология информационной безопасности</subfield>
+        <subfield id="a">информационные технологии</subfield>
+        <subfield id="a">современная военная техника</subfield>
     </field>
     <field id="675">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">536.7</subfield>
+        <subfield id="a">316.33</subfield>
+    </field>
+    <field id="686">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="2">rubbk</subfield>
+        <subfield id="a">60.5</subfield>
     </field>
     <field id="700">
         <indicator id="1"> </indicator>
         <indicator id="2">1</indicator>
-        <subfield id="a">Lee</subfield>
-        <subfield id="b">J. F.</subfield>
+        <subfield id="a">Иванов</subfield>
+        <subfield id="b">О. В.</subfield>
     </field>
-    <field id="701">
+    <field id="801">
         <indicator id="1"> </indicator>
         <indicator id="2">1</indicator>
-        <subfield id="a">Sears</subfield>
-        <subfield id="b">F. W.</subfield>
-    </field>
-    <field id="801">
-        <indicator id="1"> </indicator>
-        <indicator id="2">0</indicator>
         <subfield id="a">RU</subfield>
         <subfield id="b">19013582</subfield>
-        <subfield id="c">19991022</subfield>
+        <subfield id="c">20061214</subfield>
         <subfield id="g">PSBO</subfield>
     </field>
     <field id="801">
@@ -91,33 +227,12 @@
         <indicator id="2">2</indicator>
         <subfield id="a">RU</subfield>
         <subfield id="b">19013582</subfield>
-        <subfield id="c">20020415</subfield>
-        <subfield id="g">PSBO</subfield>
-    </field>
-    <field id="801">
-        <indicator id="1"> </indicator>
-        <indicator id="2">2</indicator>
-        <subfield id="a">RU</subfield>
-        <subfield id="b">19013582</subfield>
-        <subfield id="c">20071005</subfield>
+        <subfield id="c">20210504</subfield>
         <subfield id="g">PSBO</subfield>
     </field>
     <field id="998">
         <indicator id="1"> </indicator>
         <indicator id="2"> </indicator>
-        <subfield id="a">th0000radd1969lee0</subfield>
-    </field>
-    <field id="999">
-        <indicator id="1"> </indicator>
-        <indicator id="2"> </indicator>
-        <subfield id="a">19013582</subfield>
-        <subfield id="b">ОНЛ</subfield>
-        <subfield id="e">-1/19960131</subfield>
-        <subfield id="h">536.7</subfield>
-        <subfield id="i">L47</subfield>
-        <subfield id="p">2982892</subfield>
-        <subfield id="u">1,00</subfield>
-        <subfield id="v">1</subfield>
-        <subfield id="y">0000043347</subfield>
+        <subfield id="a">инсосо00000000иван</subfield>
     </field>
 </record>

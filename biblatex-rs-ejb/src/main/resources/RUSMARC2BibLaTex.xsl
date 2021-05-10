@@ -96,6 +96,17 @@
                     </xsl:for-each>
                 </title>
 
+                <editor>
+                    <xsl:choose>
+                        <xsl:when
+                                test="field[@id='200']/subfield[@id='f']">
+                            <xsl:value-of
+                                    select="field[@id='200']/subfield[@id='f']">
+                            </xsl:value-of>
+                        </xsl:when>
+                    </xsl:choose>
+                </editor>
+
                 <volume>
                     <xsl:choose>
                         <xsl:when
@@ -114,29 +125,6 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </volume>
-
-                <language>
-                    <xsl:choose>
-                        <xsl:when test="field[@id='101']/subfield[@id='a']">
-                            <xsl:value-of select="field[@id='101']/subfield[@id='a']" />
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:choose>
-                                <xsl:when
-                                        test="field[@id='461']/subfield[@id='1']/field[@if='101']">
-                                    <xsl:value-of
-                                            select="field[@id='461']/subfield[@id='1']/field[@if='101']/subfield[@id='a']" />
-                                </xsl:when>
-                                <xsl:when test="field[@id='463']/subfield[@id='1']/field[@id='101']">
-                                    <xsl:value-of select="field[@id='463']/subfield[@id='1']/field[@id='101']/subfield[@id='a']"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:text>Unknown</xsl:text>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </language>
 
                 <school>
                     <xsl:value-of select="field[@id='712']/subfield[@id='a']" />
