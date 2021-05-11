@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="atc-major" />
       <option name="name" value="ATC-major" />
       <option name="url" value="http://nexus.gosuslugi.local/content/repositories/builder-majorbranch/" />
@@ -35,6 +40,11 @@
       <option name="id" value="nexus" />
       <option name="name" value="Repository for JDK 1.6 builds" />
       <option name="url" value="http://nexus.gosuslugi.local/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central-releases" />
+      <option name="url" value="http://repository.ruslan.ru/artifactory/libs-release-local" />
     </remote-repository>
   </component>
 </project>
