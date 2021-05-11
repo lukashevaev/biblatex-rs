@@ -1,12 +1,8 @@
 package com.ols.ruslan.neo;
 
 
-import org.jsoup.helper.StringUtil;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class BibLaTexBuilder {
     private String recordType;
@@ -53,10 +49,6 @@ public class BibLaTexBuilder {
         instance.deleteRecordType();
         instance.deleteTechreport();
 
-        // Удаление "and" в конце поля "author"
-        String author = instance.getAuthor();
-        if (!StringUtil.isBlank(author)) instance.setAuthor(author.substring(0, author.length() - 2));
-
         // Заменяем "rus" на "russian" (по правилам данного формата)
         if (instance.getLanguage().equals("rus")) instance.setLanguage("russian");
         // Удаляем поле том, если оно не удовлетворяет паттерну
@@ -81,7 +73,11 @@ public class BibLaTexBuilder {
 
 
         instance.getFields().entrySet().forEach(entry -> {
-            if (!PatternFactory.specialSymbolsPattern.matcher(entry.getValue()).find()) {
+            String value = entry.getValue();
+            if (value != null
+                    && value.length() > 1
+                    && !PatternFactory.specialSymbolsPattern.matcher(String.valueOf(value.charAt(value.length() - 1))).find()
+                    && PatternFactory.notEmptyFieldPattern.matcher(entry.getValue()).find()) {
                 entry.setValue(entry.getValue() + ". ");
             }
         });
@@ -129,8 +125,8 @@ public class BibLaTexBuilder {
                     .append(instance.getYear())
                     .append(instance.getPages());
         } else if ("inbook".equals(recordType)) {
-            if (!instance.getPublisher().equals("")) instance.setPublisher("В: " + instance.getPublisher() + "(изд.)");
-            if (!"".equals(instance.getPages())) instance.setPages(" - " + getDigits("C" + instance.getPages()));
+            instance.setPublisher("В: " + instance.getPublisher() + "(изд.)");
+            instance.setPages(" - " + getDigits("C" + instance.getPages()));
             builder.append(instance.getVolume())
                     .append(instance.getEdition())
                     .append(instance.getEditor())
@@ -181,7 +177,8 @@ public class BibLaTexBuilder {
                 .substring(0, result.lastIndexOf(field) + field.length())
                 .replaceAll("\\.\\s*[a-zA-Zа-яА-Я]?\\s*\\.", ".")
                 .replaceAll(",\\s*[,.]", ",")
-                .replaceAll(":\\s*[,.]", ":");
+                .replaceAll(":\\s*[,.:]", ":")
+                .replaceAll("-\\s*-", "-");
         return result;
     }
 }
