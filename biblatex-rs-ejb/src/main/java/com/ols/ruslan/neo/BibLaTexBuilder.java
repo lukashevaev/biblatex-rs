@@ -66,10 +66,10 @@ public class BibLaTexBuilder {
 
         instance.setAddress(" - " + instance.getAddress() + ":");
         instance.setEdition(" - " + instance.getEdition());
-        instance.setPages("- " + getDigits(instance.getPages()) + " с.");
+        instance.setPages("- С. " + getDigits(instance.getPages()));
         instance.setPublisher(instance.getPublisher() + ", ");
         instance.setTitleChapter("// " + instance.getTitleChapter());
-        instance.setEditor("/ " + instance.getEditor());
+        instance.setEditor("/ под ред. " + instance.getEditor());
 
 
         instance.getFields().entrySet().forEach(entry -> {
@@ -101,11 +101,11 @@ public class BibLaTexBuilder {
             builder.append(instance.getTitle());
         }
         if ("article".equals(recordType)) {
-            instance.setPages(" - " + getDigits("C" + instance.getPages()));
-            builder.append(instance.getEditor());
-            builder.append(" // ").append(instance.getJournal());
-            builder.append(" - ").append(instance.getVolume());
-            builder//.append(instance.getEditor())
+            instance.setJournal(" // " + instance.getJournal());
+            instance.setVolume(" - " + instance.getVolume());
+            builder.append(instance.getJournal())
+                    .append(instance.getEditor())
+                    .append(instance.getVolume())
                     .append(instance.getAddress())
                     .append(instance.getPublisher())
                     .append(instance.getYear())
@@ -127,7 +127,6 @@ public class BibLaTexBuilder {
                     .append(instance.getPages());
         } else if ("inbook".equals(recordType)) {
             instance.setPublisher("В: " + instance.getPublisher() + "(изд.)");
-            instance.setPages(" - " + getDigits("C" + instance.getPages()));
             builder.append(instance.getVolume())
                     .append(instance.getEdition())
                     .append(instance.getEditor())
@@ -152,7 +151,7 @@ public class BibLaTexBuilder {
                     .append(instance.getPages());
             // -(series; number).
         } else if ("inproceedings".equals(recordType)) {
-            if (!"".equals(instance.getPages())) instance.setPages("-" + getDigits("C" + instance.getPages()));
+            instance.setPages("-" + getDigits("C" + instance.getPages()));
             builder.append(instance.getEditor())
                     .append(instance.getTitleChapter())
                     .append(instance.getAddress())
@@ -176,7 +175,8 @@ public class BibLaTexBuilder {
         String result = builder.toString();
         if (field != null) return builder
                 .substring(0, result.lastIndexOf(field) + field.length())
-                .replaceAll("\\.\\s*[a-zA-Zа-яА-Я]?\\s*\\.", ".")
+                .replaceAll("\\.\\s*\\.", ".")
+                .replaceAll("\\.[a-zA-Zа-яА-Я]?\\.", ".")
                 .replaceAll(",\\s*[,.]", ",")
                 .replaceAll(":\\s*[,.:]", ":")
                 .replaceAll("-\\s*-", "-");
