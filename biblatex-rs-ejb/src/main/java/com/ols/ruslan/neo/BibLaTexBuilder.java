@@ -102,9 +102,10 @@ public class BibLaTexBuilder {
         }
         if ("article".equals(recordType)) {
             instance.setPages(" - " + getDigits("C" + instance.getPages()));
+            builder.append(instance.getEditor());
             builder.append(" // ").append(instance.getJournal());
             builder.append(" - ").append(instance.getVolume());
-            builder.append(instance.getEditor())
+            builder//.append(instance.getEditor())
                     .append(instance.getAddress())
                     .append(instance.getPublisher())
                     .append(instance.getYear())
