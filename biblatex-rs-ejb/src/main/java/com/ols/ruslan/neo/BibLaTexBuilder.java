@@ -70,7 +70,7 @@ public class BibLaTexBuilder {
         instance.setPublisher(instance.getPublisher() + ", ");
         instance.setTitleChapter("// " + instance.getTitleChapter());
         instance.setEditor("/ под ред. " + instance.getEditor());
-
+        instance.setVolume(" - " + instance.getVolume());
 
         instance.getFields().entrySet().forEach(entry -> {
             String value = entry.getValue();
