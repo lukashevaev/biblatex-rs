@@ -80,6 +80,6 @@ public class PatternFactory {
 
     public static final Pattern specialSymbolsPattern = Pattern.compile("[:;.,\\-/\\s]");
 
-    public static final Pattern notEmptyFieldPattern = Pattern.compile("[a-zA-Zа-яА-Я0-9]{2,}");
+    public static final Pattern notEmptyFieldPattern = Pattern.compile("[a-zA-Zа-яА-Я0-9]");
 
 }
