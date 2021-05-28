@@ -1,0 +1,140 @@
+<record syntax="rusmarc">
+    <leader>
+        <length>00844</length>
+        <status>n</status>
+        <type>a</type>
+        <leader07>m</leader07>
+        <leader08>2</leader08>
+        <leader09>a</leader09>
+        <indicatorCount>2</indicatorCount>
+        <identifierLength>2</identifierLength>
+        <dataBaseAddress>00193</dataBaseAddress>
+        <leader17> </leader17>
+        <leader18>i</leader18>
+        <leader19> </leader19>
+        <entryMap>450 </entryMap>
+    </leader>
+    <field id="001">10</field>
+    <field id="005">20210504113700.7</field>
+    <field id="100">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">20201208d2020 k y0rusy50 ca</subfield>
+    </field>
+    <field id="101">
+        <indicator id="1">0</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">rus</subfield>
+    </field>
+    <field id="102">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">RU</subfield>
+    </field>
+    <field id="105">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">a z 000zy</subfield>
+    </field>
+    <field id="181">
+        <indicator id="1"> </indicator>
+        <indicator id="2">0</indicator>
+        <subfield id="a">i4</subfield>
+    </field>
+    <field id="182">
+        <indicator id="1"> </indicator>
+        <indicator id="2">0</indicator>
+        <subfield id="a">n</subfield>
+    </field>
+    <field id="200">
+        <indicator id="1">0</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">№ 12</subfield>
+    </field>
+    <field id="210">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="d">2020</subfield>
+    </field>
+    <field id="461">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="1">
+            <field id="001">RU\SPSTU\ser\115697</field>
+        </subfield>
+        <subfield id="1">
+            <field id="011">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">0028-1263</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="110">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">afaz|||0uu0</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="200">
+                <indicator id="1">1</indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Наука и жизнь</subfield>
+                <subfield id="e">ежемесячный научно-популярный журнал </subfield>
+                <subfield id="v">№ 12</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="210">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Москва</subfield>
+                <subfield id="c">Пресса</subfield>
+                <subfield id="d">1935-</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="300">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Изд-во: до №1 1992 г. - Правда</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="305">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="a">Основан в 1890 г. Изд. возобновлено в окт. 1934 г.</subfield>
+            </field>
+        </subfield>
+        <subfield id="1">
+            <field id="686">
+                <indicator id="1"> </indicator>
+                <indicator id="2"> </indicator>
+                <subfield id="2">rubbk</subfield>
+                <subfield id="a">72я5</subfield>
+            </field>
+        </subfield>
+    </field>
+    <field id="830">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Версия шаблона по ГОСТ Р 7.0.100-2018</subfield>
+    </field>
+    <field id="998">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">№01200000020200000</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">СПбГПУ</subfield>
+        <subfield id="b">ОНЛ</subfield>
+        <subfield id="e"/>
+        <subfield id="p"/>
+        <subfield id="u">0</subfield>
+        <subfield id="v">1</subfield>
+    </field>
+</record>

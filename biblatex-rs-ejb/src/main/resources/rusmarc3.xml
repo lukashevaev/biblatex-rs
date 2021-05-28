@@ -1,0 +1,602 @@
+<record syntax="rusmarc">
+    <leader>
+        <length>04552</length>
+        <status>n</status>
+        <type>a</type>
+        <leader07>m</leader07>
+        <leader08> </leader08>
+        <leader09>a</leader09>
+        <indicatorCount>2</indicatorCount>
+        <identifierLength>2</identifierLength>
+        <dataBaseAddress>00781</dataBaseAddress>
+        <leader17>3</leader17>
+        <leader18>i</leader18>
+        <leader19> </leader19>
+        <entryMap>450 </entryMap>
+    </leader>
+    <field id="001">3</field>
+    <field id="005">20190822123937.8</field>
+    <field id="010">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">5-86457-016-8</subfield>
+        <subfield id="b">ориг.</subfield>
+    </field>
+    <field id="100">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19991022d1995 k y1rusb01020304ca</subfield>
+    </field>
+    <field id="101">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">rus</subfield>
+    </field>
+    <field id="105">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">y j </subfield>
+    </field>
+    <field id="200">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Сборник задач и упражнений по математическому анализу</subfield>
+        <subfield id="e">Учеб. пособие для ун-тов и пед. вузов</subfield>
+    </field>
+    <field id="205">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">12 изд. стер.</subfield>
+    </field>
+    <field id="210">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">СПб.</subfield>
+        <subfield id="c">Мифрил</subfield>
+        <subfield id="d">1995</subfield>
+    </field>
+    <field id="215">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">489с.</subfield>
+    </field>
+    <field id="620">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="d">Санкт-Петербург</subfield>
+    </field>
+    <field id="675">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">517(076.8)</subfield>
+    </field>
+    <field id="700">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="a">Демидович</subfield>
+        <subfield id="b">Б. П.</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">0</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">19991022</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">2</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20020401</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">2</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20170919</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">1783/20040414</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">1,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089330</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">1803/20040603</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">1</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2142/20070511</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000224223</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2444/20090828</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">2</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2490/20100216</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000091936</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2490/20100216</subfield>
+        <subfield id="p">759221</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">1</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047272</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047275</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047276</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047278</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047279</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089153</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089302</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089305</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089307</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089309</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089310</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089314</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089320</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089327</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089336</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000154705</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2505/20100419</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000366615</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2559/20101026</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089326</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2559/20101026</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089334</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2559/20101026</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089317</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2559/20101026</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089155</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2615/20110429</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089318</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2615/20110429</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000265181</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2654/20111031</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047270</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2654/20111031</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047274</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2654/20111031</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089300</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2654/20111031</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089301</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2654/20111031</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089312</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2878/20140110</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">20000,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089332</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2878/20140110</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089313</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2905/20140312</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000047281</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">2930/20140505</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="q">55/19960131</subfield>
+        <subfield id="u">20000,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000089333</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">3288/20170512</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">6</subfield>
+    </field>
+    <field id="989">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">3322/20170828</subfield>
+        <subfield id="q">-11/20010108</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">4</subfield>
+    </field>
+    <field id="998">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">сбзаи0смиф1995деми</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОНЛ</subfield>
+        <subfield id="e">-1/19960131</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">7247112</subfield>
+        <subfield id="u">1,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000174250</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОНЛ</subfield>
+        <subfield id="e">-1/19960131</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">7247122</subfield>
+        <subfield id="u">1,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000174560</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">-11/20030121</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">759221</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">1</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">-11/20010108</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">15000,00</subfield>
+        <subfield id="v">44</subfield>
+        <subfield id="y">0000047277</subfield>
+        <subfield id="y">0000089154</subfield>
+        <subfield id="y">0000089299</subfield>
+        <subfield id="y">0000248887</subfield>
+        <subfield id="y">0000464620</subfield>
+        <subfield id="y">0000089303</subfield>
+        <subfield id="y">0000089306</subfield>
+        <subfield id="y">0000089316</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">55/19960131</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">20000,00</subfield>
+        <subfield id="v">11</subfield>
+        <subfield id="y">0000089331</subfield>
+        <subfield id="y">0000089328-0000089329</subfield>
+        <subfield id="y">0000089335</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОУЛ</subfield>
+        <subfield id="e">70/19960131</subfield>
+        <subfield id="h">517(076)</subfield>
+        <subfield id="i">Д304</subfield>
+        <subfield id="p">БУ-8200</subfield>
+        <subfield id="u">20000,00</subfield>
+        <subfield id="v">9</subfield>
+        <subfield id="y">0000089319</subfield>
+        <subfield id="y">0000089321-0000089323</subfield>
+    </field>
+</record>

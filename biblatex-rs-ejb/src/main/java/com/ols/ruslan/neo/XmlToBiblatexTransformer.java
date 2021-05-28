@@ -12,6 +12,8 @@ import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -28,6 +30,9 @@ public class XmlToBiblatexTransformer implements MediaTypeTransformerFacade {
     private static final TransformerFactory transformerFactory = TransformerFactory.newInstance();
     private static Templates templates;
 
+    private static final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    private Transformer transformer;
+    private DocumentBuilder builder;
 
     @PostConstruct
     void startup() {
@@ -36,6 +41,11 @@ public class XmlToBiblatexTransformer implements MediaTypeTransformerFacade {
             templates = transformerFactory.newTemplates(new StreamSource(
                     XmlToBiblatexTransformer.class.getClassLoader().getResourceAsStream(
                             "RUSMARC2BibLaTex.xsl")));
+
+            // Создаем трансформер для преобразования одного xml в другой
+            transformer = templates.newTransformer();
+            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+           // builder = factory.newDocumentBuilder();
 
         } catch (TransformerConfigurationException e) {
             log.severe("Unable to initialise templates: " + e.getMessage());
@@ -63,6 +73,33 @@ public class XmlToBiblatexTransformer implements MediaTypeTransformerFacade {
         BibLaTexBuilder bibLaTexBuilder = new BibLaTexBuilder(fields);
 
         return bibLaTexBuilder.buildBiblatex().getBytes(encoding);
+    }
+
+    public String transformTest(byte[] content) throws Exception {
+        DOMResult result = new DOMResult();
+
+        // Создаем источник для преобразования из поступившего массива байт
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(new ByteArrayInputStream(content));
+
+        //Трансформация,парсинг и создание нового формата
+        transformer.transform(new DOMSource(document), result);
+        Map<String, String> fields = XmlParser.parse((Document) result.getNode());
+        BibLaTexBuilder biblatexBuilder = new BibLaTexBuilder(fields);
+        String biblatex = biblatexBuilder.buildBiblatex();
+        fillBiblatexFile(biblatex);
+        return biblatex;
+    }
+
+    private void fillBiblatexFile(String biblatex) {
+        try (FileWriter writer = new FileWriter("src/main/resources/biblatex.txt", false)) {
+            writer.write(biblatex);
+
+            writer.flush();
+        } catch(IOException ex){
+            System.out.println(ex.getMessage());
+        }
     }
 
 }

@@ -1,0 +1,123 @@
+<record syntax="rusmarc">
+    <leader>
+        <length>00780</length>
+        <status>n</status>
+        <type>a</type>
+        <leader07>m</leader07>
+        <leader08> </leader08>
+        <leader09>a</leader09>
+        <indicatorCount>2</indicatorCount>
+        <identifierLength>2</identifierLength>
+        <dataBaseAddress>00241</dataBaseAddress>
+        <leader17>3</leader17>
+        <leader18>i</leader18>
+        <leader19> </leader19>
+        <entryMap>450 </entryMap>
+    </leader>
+    <field id="001">1</field>
+    <field id="005">20190822123749.9</field>
+    <field id="100">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19991022d1969 k y1rusb01020304ca</subfield>
+    </field>
+    <field id="105">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">a j </subfield>
+    </field>
+    <field id="200">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Thermodynamics </subfield>
+        <subfield id="e">An introductory text for engineering students</subfield>
+    </field>
+    <field id="205">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">2. ed</subfield>
+    </field>
+    <field id="210">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Reading et al.</subfield>
+        <subfield id="c">Addison-Wesley</subfield>
+        <subfield id="d">1969</subfield>
+    </field>
+    <field id="215">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">622p.</subfield>
+    </field>
+    <field id="606">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="2">spstush</subfield>
+        <subfield id="3">RU\SPSTU\sub\1215</subfield>
+        <subfield id="a">Термодинамика</subfield>
+    </field>
+    <field id="620">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="d">Readingetal.</subfield>
+    </field>
+    <field id="675">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">536.7</subfield>
+    </field>
+    <field id="700">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="a">Lee</subfield>
+        <subfield id="b">J. F.</subfield>
+    </field>
+    <field id="701">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="a">Sears</subfield>
+        <subfield id="b">F. W.</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">0</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">19991022</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">2</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20020415</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">2</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20071005</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="998">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">th0000radd1969lee0</subfield>
+    </field>
+    <field id="999">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">19013582</subfield>
+        <subfield id="b">ОНЛ</subfield>
+        <subfield id="e">-1/19960131</subfield>
+        <subfield id="h">536.7</subfield>
+        <subfield id="i">L47</subfield>
+        <subfield id="p">2982892</subfield>
+        <subfield id="u">1,00</subfield>
+        <subfield id="v">1</subfield>
+        <subfield id="y">0000043347</subfield>
+    </field>
+</record>

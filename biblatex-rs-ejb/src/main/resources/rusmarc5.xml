@@ -1,0 +1,34 @@
+<record syntax="1.2.840.10003.5.28.1">
+    <leader>
+        <length>00000</length>
+        <status> </status>
+        <type> </type>
+        <leader07> </leader07>
+        <leader08> </leader08>
+        <leader09> </leader09>
+        <indicatorCount> </indicatorCount>
+        <identifierLength> </identifierLength>
+        <dataBaseAddress>00000</dataBaseAddress>
+        <leader17> </leader17>
+        <leader18> </leader18>
+        <leader19> </leader19>
+        <entryMap> </entryMap>
+    </leader>
+    <field id="001">5</field>
+    <field id="005">20210427155720.1</field>
+    <field id="100">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">20190826 rus 50 ca</subfield>
+    </field>
+    <field id="200">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Основы тестирования</subfield>
+    </field>
+    <field id="998">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">осте00000000000000</subfield>
+    </field>
+</record>

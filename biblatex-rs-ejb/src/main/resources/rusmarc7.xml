@@ -1,0 +1,110 @@
+<record syntax="1.2.840.10003.5.28.1">
+    <leader>
+        <length>01915</length>
+        <status>n</status>
+        <type>a</type>
+        <leader07>m</leader07>
+        <leader08> </leader08>
+        <leader09>a</leader09>
+        <indicatorCount>2</indicatorCount>
+        <identifierLength>2</identifierLength>
+        <dataBaseAddress>00229</dataBaseAddress>
+        <leader17> </leader17>
+        <leader18>i</leader18>
+        <leader19> </leader19>
+        <entryMap>450 </entryMap>
+    </leader>
+    <field id="001">7</field>
+    <field id="005">20200130171120.2</field>
+    <field id="010">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">5-7422-0188-5</subfield>
+    </field>
+    <field id="100">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">20200130h2001 k y0rusy50 ca</subfield>
+    </field>
+    <field id="101">
+        <indicator id="1">0</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">rus</subfield>
+        <subfield id="a">fre</subfield>
+    </field>
+    <field id="102">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">RU</subfield>
+    </field>
+    <field id="105">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">a j 000zy</subfield>
+    </field>
+    <field id="200">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Le Français accéléré</subfield>
+        <subfield id="e">Ускоренный курс французского языка (с фонограммой)</subfield>
+        <subfield id="f">В.П. Филимонова</subfield>
+        <subfield id="e">Учеб. пособие для школ, гимназий и колледжей с франц. яз. в качестве второго яз. и для самостоятельного изучения.</subfield>
+    </field>
+    <field id="210">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Санкт-Петербург</subfield>
+        <subfield id="d">2001</subfield>
+    </field>
+    <field id="215">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">143 с.</subfield>
+        <subfield id="c">ил</subfield>
+    </field>
+    <field id="330">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">Данное учебное пособие предназначено для учащихся и всех, кто начинает изучение французского языка. Учебник состоит из вводно-фонетической части, состоящей из 5 уроков (20 часов) и 5 разговорных тем, перед введением тематического материала вводится лексика и грамматический материал, затем даются лексико-грамматические упражнения Учебное пособие включает 5 разговорных тем, которые вводятся путем диалогической речи, что дает возможность усваивать французский разговорный язык.</subfield>
+    </field>
+    <field id="610">
+        <indicator id="1">1</indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">французский язык</subfield>
+        <subfield id="a">учебные пособия </subfield>
+    </field>
+    <field id="686">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="2">rubbk</subfield>
+        <subfield id="a">81.471.1-92</subfield>
+    </field>
+    <field id="700">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="a">Филимонова</subfield>
+        <subfield id="b">В.П.</subfield>
+        <subfield id="g">Вера Павловна</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">1</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20030123</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="801">
+        <indicator id="1"> </indicator>
+        <indicator id="2">2</indicator>
+        <subfield id="a">RU</subfield>
+        <subfield id="b">19013582</subfield>
+        <subfield id="c">20030221</subfield>
+        <subfield id="g">PSBO</subfield>
+    </field>
+    <field id="998">
+        <indicator id="1"> </indicator>
+        <indicator id="2"> </indicator>
+        <subfield id="a">lefracс0002001фили</subfield>
+    </field>
+</record>
